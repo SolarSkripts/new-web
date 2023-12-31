@@ -223,8 +223,8 @@ header {
 header .header-content {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: right;
+    align-items: center;
+    justify-content: center;
 }
 
 header .header-content img {
