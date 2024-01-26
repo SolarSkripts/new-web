@@ -681,6 +681,12 @@ footer .footer-content .footer-section ul li a:hover {
     color: var(--color-success);
     border-color: var(--color-success);
 }
+.ur-contact-div button {
+    /* ... */
+    display: flex;
+    justify-content: center;
+    /* ... */
+}
 
 @media screen and (min-width: 768px) {
     .contact-content {
