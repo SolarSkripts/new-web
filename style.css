@@ -681,7 +681,7 @@ footer .footer-content .footer-section ul li a:hover {
     color: var(--color-success);
     border-color: var(--color-success);
 }
-.ur-contact-div button {
+.contact.button {
     /* ... */
     display: flex;
     justify-content: center;
