@@ -118,10 +118,82 @@
             <section id="contact">
                 <h2>Contact</h2>
                 <hr>
-            </section>
-                </div>
-            </section>
-        </main>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2f3136;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white; /* Set text color to white */
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #2f3136;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center; /* Center align the heading */
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #6C9BCF;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            display: block;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5280a3;
+        }
+    </style>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/your_formspree_form_id" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 
         <footer>
             <div class="footer-content">
