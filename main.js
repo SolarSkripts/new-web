@@ -65,7 +65,7 @@ const previouslyAcknowledgedMobileAlert =
 
 if (isMobile && !previouslyAcknowledgedMobileAlert) {
   alert(
-    "Hey my friend this website doesnt work as well on mobile if you are not on mobile please contact us"
+    "You're on mobile - just to let you know this website isnt as good on mobile"
   );
 
   localStorage.setItem("previouslyAcknowledgedMobileAlert", true);
