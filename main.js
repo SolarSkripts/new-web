@@ -57,3 +57,16 @@ $(document).ready(function() {
 function isDarkMode() {
     return localStorage.getItem('darkMode') === 'true';
 }
+
+
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
+const previouslyAcknowledgedMobileAlert =
+  localStorage.getItem("previouslyAcknowledgedMobileAlert") || false;
+
+if (isMobile && !previouslyAcknowledgedMobileAlert) {
+  alert(
+    "Hey my friend this website doesnt work as well on mobile if you are not on mobile please contact us"
+  );
+
+  localStorage.setItem("previouslyAcknowledgedMobileAlert", true);
+}
